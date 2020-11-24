@@ -8,6 +8,9 @@ export default defineConfig({
     'https://infra-engineering-yos-prod.obs.cn-north-1.myhuaweicloud.com/9cdcb2f3dc540c966fa42e765855ba51a47de429-logo_%E4%BA%91%E8%B4%A6%E6%88%B7logo%402x.png',
   outputPath: 'docs-dist',
   mode: 'site',
+  base: '/cloud',
+  publicPath: '/cloud/',
+  exportStatic: {}, // 将所有路由输出为 HTML 目录结构，以免刷新页面时 404
   styles: [
     '.__dumi-default-previewer-demo > div > div { min-height: 400px; }',
     '.__dumi-default-layout-content {overflow: hidden; overflow-x: auto;}',
