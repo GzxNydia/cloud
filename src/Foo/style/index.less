@@ -1,0 +1,13 @@
+@import '../../style/base.less';
+
+@foo-prefix-cls: ~'@{cloudaccount-prefix}-foo';
+
+.@{foo-prefix-cls} {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  img {
+    max-width: 50px;
+  }
+}
